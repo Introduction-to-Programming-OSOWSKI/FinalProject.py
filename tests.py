@@ -3,14 +3,32 @@
 #TAMPERING WITH THIS FILE WILL BE OBVIOUS AND WILL RESULT IN A ZERO
 
 import main;
-import datetime;
 
-year = 2020
-month = 12
-day = 1
 
-def test_code():
-    assert 0 > 1, "error"
+def test_code1():
+    assert main.times10(4) == 40, "error"
+    assert main.times10(67) == 670, "error"
 
-def test_late():
-    assert datetime.datetime.now() < datetime.datetime(year, month, day + 1, 4, 0), "Submitted Late"
+def test_code2():
+    assert main.firstA("ant") == True, "error"
+    assert main.firstA("salsa") == False, "error"
+
+def test_code3():
+    assert main.sizer(4) == "small", "error"
+    assert main.sizer(67) == "medium", "error"
+    assert main.sizer(999) == "large", "error"
+
+def test_code4():
+    assert main.doubleWord("brake") == "brakebrake", "error"
+    assert main.doubleWord("hot") == "hothot", "error"
+
+def test_code5():
+    assert main.penguin("king") == "increasing", "error"
+    assert main.penguin("macaroni") == "vulnerable", "error"
+    assert main.penguin("royal") == "near threatened", "error"
+    assert main.penguin("african") == "endangered", "error"
+
+
+
+
+
